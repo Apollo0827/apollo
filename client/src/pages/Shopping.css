@@ -1,0 +1,36 @@
+.shopping-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff9f0 0%, #fff5e6 100%);
+}
+
+.shopping-header {
+  padding: 16px 20px;
+  background: var(--white);
+  box-shadow: 0 4px 16px var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shopping-back {
+  color: var(--pink-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.shopping-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.3rem;
+  color: var(--pink-dark);
+}
+
+.shopping-placeholder {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.shopping-hint {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}

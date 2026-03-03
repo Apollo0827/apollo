@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Carter and Beautiful Mommy</title>
+    <style>
+      body { margin: 0; min-height: 100vh; background: #fff5f7; font-family: sans-serif; }
+      #dev-bar {
+        background: #e86ba8;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+      #root { min-height: calc(100vh - 50px); }
+    </style>
+  </head>
+  <body>
+    <!-- This bar is always visible if the page loaded. If you don't see it, you're not on the right URL (use the URL from the terminal). -->
+    <div id="dev-bar">Cute Carter &amp; Beautiful Mommy — Page loaded ✓ <span id="dev-url" style="font-size:14px;opacity:0.9;"></span></div>
+    <script>
+      document.getElementById('dev-url').textContent = '( ' + location.href + ' )';
+    </script>
+    <div id="root">
+      <div style="padding: 2rem; text-align: center; font-size: 1.2rem;">Loading app…</div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
